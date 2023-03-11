@@ -13,7 +13,7 @@ for(let i=0;i<s.length;i++){
 }
 let c=0;
 mp.forEach((value,key)=>{
-    if(value%2==1){
+    if(value%2==1){//odd
         c++;
     }
 })

@@ -12,6 +12,8 @@ instructor.lastName="Awasthi"
 //Removal — O(1)
 delete instructor.favoriteNumbers
 
+console.log(instructor);
+
 //Access — O(1)
 console.log(instructor.firstName);
 

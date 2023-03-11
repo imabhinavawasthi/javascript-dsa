@@ -1,5 +1,6 @@
 let instructor = {
     firstName: "Abhinav",
+    lastName:"Awasthi",
     isInstructor: true,
     favoriteNumbers: [1,2,3,4]
 }
@@ -16,5 +17,5 @@ console.log(Object.entries(instructor));
 //hasOwnProperty — O(1)
 console.log(instructor.hasOwnProperty("lastName"));
 
-console.log(instructor.firstName)//O(N)
+console.log(instructor.firstName)//O(1)
 

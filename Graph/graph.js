@@ -156,8 +156,8 @@ class Queue {
 
 
 // Using the above implemented graph class
-var g = new Graph(6);
-var vertices = ['A', 'B', 'C', 'D', 'E', 'F'];
+var g = new Graph(5);
+var vertices = ['A', 'B', 'C', 'D', 'E'];
 
 // adding vertices
 for (var i = 0; i < vertices.length; i++) {
@@ -170,9 +170,7 @@ g.addEdge('A', 'D');
 g.addEdge('A', 'E');
 g.addEdge('B', 'C');
 g.addEdge('D', 'E');
-g.addEdge('E', 'F');
 g.addEdge('E', 'C');
-g.addEdge('C', 'F');
 
 // prints all vertex and
 // its adjacency list
@@ -188,5 +186,5 @@ g.addEdge('C', 'F');
 console.log("BFS");
 g.bfs('A')
 
-console.log("DFS");
-g.dfs("A")
+// console.log("DFS");
+// g.dfs("A")
