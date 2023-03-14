@@ -6,7 +6,7 @@
         var visited = {};
     
         // Create an object for queue
-        var q = new Queue();
+        var q = new Queue();//Stack->DFS
     
         // add the starting node to the queue
         visited[startingNode] = true;

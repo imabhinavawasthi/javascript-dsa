@@ -183,8 +183,8 @@ g.addEdge('E', 'C');
 // g.printGraph();
 
 
-console.log("BFS");
-g.bfs('A')
+// console.log("BFS");
+// g.bfs('A')
 
-// console.log("DFS");
-// g.dfs("A")
+console.log("DFS");
+g.dfs('A')

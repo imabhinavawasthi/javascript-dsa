@@ -18,7 +18,7 @@ DFSUtil(vert, visited)
  
     for (var i in get_neighbours) {
         var get_elem = get_neighbours[i];
-        if (!visited[get_elem])
+        if (!visited[get_elem])//not visited
             this.DFSUtil(get_elem, visited);//recursive call
     }
 }
