@@ -10,3 +10,5 @@ function fac(n){
 
 console.log(fac(n));
 
+
+

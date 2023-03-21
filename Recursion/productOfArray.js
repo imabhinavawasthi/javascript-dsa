@@ -1,8 +1,11 @@
-function productOfArray(arr){
+function rec(arr,i){
     //base
-    if(arr.length==0)return 1
-    //recursion
-    return arr[0]*productOfArray(arr.slice(1))//tail
+    if(i==arr.length)return 1
+
+    //recursive
+    return arr[i]*rec(arr,i+1)
 }
 
-console.log(productOfArray([2,3,8,5,1]));
+console.log(rec([9,1,8,5],0));
+
+//O(n)
