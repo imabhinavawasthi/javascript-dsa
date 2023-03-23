@@ -1,31 +1,12 @@
-let m=BigInt(1000000007);
-function powfun(a,n){//O(logn)
-    //base
-    let ans=BigInt(1)
-    if(n==0)return ans
-
-    //recursion
-    ans=powfun(a,Math.floor(n/2))//a^n/2
-    ans=BigInt(ans)
-    if(n%2==1){//odd
-        ans=(ans%m*ans%m)%m;
-        ans=(ans%m*BigInt(a)%m)%m;
-    }
-    else{//even
-        ans=(ans%m*ans%m)%m;
-    }
-    return ans%m
+function pow(n, p){
+    if(p==0n) return 1n;
+    let x = pow(n, Math.floor(p/2));
+    return (p%2==0 ? x*x : x*x*n)%1000000007n;
 }
-var countGoodNumbers = function(n) {
-    var even=0,odd=0;
-    if(n%2==1){
-        even=Math.floor(n/2)+1//even
-        odd=Math.floor(n/2)//odd
-    }
-    else{
-        even=Math.floor(n/2)
-        odd=Math.floor(n/2)
-    }
-    var ans=(powfun(5,even)%m*powfun(4,odd)%m)%m
-    return ans
-};
+
+function countGoodNumbers(n){
+    if(n==1) return 5;
+    let e = Math.ceil(n/2);
+    let o = Math.floor(n/2);
+    return pow(5n, e)*pow(4n, o)%1000000007n;
+}
