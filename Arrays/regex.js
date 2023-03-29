@@ -1,4 +1,4 @@
-let x=5.5
+let x=56
 
 let regexPattern = /^-?[0-9]+$/;
     
