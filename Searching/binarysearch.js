@@ -1,5 +1,5 @@
 let arr=[1,3,7,9,12,17,22,30,45]
-let x=46
+let x=12
 
 let l=0
 let r=arr.length-1
@@ -7,7 +7,7 @@ let r=arr.length-1
 let ans=-1
 
 while(l<=r){
-    let mid=parseInt(((l+r)/2))
+    let mid=Math.floor(((l+r)/2))
 
     if(x==arr[mid]){
         ans=mid

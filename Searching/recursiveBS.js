@@ -13,7 +13,7 @@ function binary_search(l,r){
     let mid=parseInt((l+r)/2)
     // console.log(mid,l,r);
     if(x==arr[mid]){
-        console.log(x, "is present");
+        console.log(x, "is present at index",mid);
         return 
     }
     else if(x>arr[mid]){//right

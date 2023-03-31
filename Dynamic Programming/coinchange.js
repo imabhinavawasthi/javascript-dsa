@@ -27,7 +27,7 @@
             }
         }
         if(dp[i][amount])
-        return dp[i][amount]
+            return dp[i][amount]
         var nottake=rec(i-1,coins,amount)
         var take=1e9
         if(amount>=coins[i]){
