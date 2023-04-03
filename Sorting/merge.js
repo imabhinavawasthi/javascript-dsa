@@ -1,32 +1,34 @@
-let arr1=[1,6,9]
-let arr2=[2,4,8,10,15]
-let n=arr1.length
-let m=arr2.length
+let a=[2,5,8,9]
+let b=[3,4,7]
 
-let arr3=[]
-let i=0
-let j=0
+var n=a.length,m=b.length
+let c=new Array(m+n)
 
-while(arr3.length<(n+m)){
-    if(i==n){
-        arr3.push(arr2[j])
-        j++
-    }
-    else if(j==m){
-        arr3.push(arr1[i])
+let i=0,j=0,k=0
+while(i<n&&j<m){
+    if(a[i]<b[j]){
+        c[k]=a[i]
         i++
+        k++
     }
     else{
-        if(arr1[i]<arr2[j]){
-            arr3.push(arr1[i])
-            i++
-        }
-        else{
-            arr3.push(arr2[j])
-            j++
-        }
+        c[k]=b[j]
+        k++
+        j++
     }
-
 }
 
-console.log(arr3);
+while(i<n){
+    c[k]=a[i]
+    i++
+    k++
+}
+
+while(j<m){
+    c[k]=b[j]
+    k++
+    j++
+}
+
+console.log(c);
+
