@@ -62,10 +62,12 @@ function merge(arr, l, m, r)//O(N)
 // right index of the sub-array
 // of arr to be sorted */
 function mergeSort(arr,l, r){//O(logN)
-    if(l>=r){
+    //base
+    if(l==r){
         return;//returns recursively
     }
-    var m=parseInt((l+r)/2)
+    // recursive
+    var m=Math.floor((l+r)/2)
     mergeSort(arr,l,m);
     mergeSort(arr,m+1,r);
     merge(arr,l,m,r);//O(N)
