@@ -1,4 +1,4 @@
-let arr=[4,3,1,2,6,2]
+let arr=[2,7,1,6,5,4,6]
 let n=arr.length
 
 let missing,repeated
@@ -21,3 +21,5 @@ for(let i=0;i<n;i++){
 }
 
 console.log("repeated" ,repeated," and missing ",missing);
+
+console.log(arr);

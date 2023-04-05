@@ -5,18 +5,23 @@
 // Second subarray is arr[m+1..r]
 function merge(arr, l, m, r)//O(N)
 {
-    var n1 = m - l + 1;
-    var n2 = r - m;
+    
  
     // Create temp arrays
-    var L = new Array(n1);
-    var R = new Array(n2);
+    var L =[];
+    var R =[];
  
     // Copy data to temp arrays L[] and R[]
-    for (var i = 0; i < n1; i++)
-        L[i] = arr[l + i];
-    for (var j = 0; j < n2; j++)
-        R[j] = arr[m + 1 + j];
+    for(let i=l;i<=m;i++){
+        L.push(arr[i])
+    }
+
+    for(let i=m+1;i<=r;i++){
+        R.push(arr[i])
+    }
+
+    var n1=L.length
+    var n2=R.length
  
     // Merge the temp arrays back into arr[l..r]
  
@@ -81,7 +86,7 @@ function printArray( A, size)
 }
  
  
-var arr = [ 12, 11, 13, 5, 6, 7 ];
+var arr = [ 12, 8,1 ,5,15,6,9 ];
     var arr_size = arr.length;
  
     console.log("Given array is");
