@@ -1,17 +1,17 @@
 let n=17
 
-let check=true
+let prime=true
 
-for(let i=2;i*i<=n;i++){//O(sqrt(n))
-    if(n%i==0){//i is a factor of n
-        check=false
+for(let i=2;i*i<=n;i++){//O(sqrt(N))
+    if(n%i==0){
+        prime=false
         break
     }
 }
-if(n==1){
-    console.log("neither prime nor composite");
+
+if(prime==true){
+    console.log("Prime");
 }
-else if(check)
-    console.log("prime");
-else
-    console.log("not prime");
+else{
+    console.log("Not Prime");
+}

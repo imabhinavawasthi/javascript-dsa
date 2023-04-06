@@ -18,7 +18,7 @@ function isPrime(n) {
 
 //print prime numbers till n
 
-let n=50
+let n=100
 
 let primes=[]
 
