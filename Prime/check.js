@@ -9,7 +9,10 @@ for(let i=2;i*i<=n;i++){//O(sqrt(N))
     }
 }
 
-if(prime==true){
+if(n==1){
+    console.log("not prime composite");
+}
+else if(prime==true){
     console.log("Prime");
 }
 else{
