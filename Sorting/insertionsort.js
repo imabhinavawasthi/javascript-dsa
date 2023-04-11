@@ -1,12 +1,16 @@
-function insertionSort(arr) {
-    for (let i = 1; i < arr.length; i++) {
-      let currentValue = arr[i]
-      let j
-      for (j = i - 1; j >= 0 && arr[j] > currentValue; j--) {
-        arr[j + 1] = arr[j]
-      }
-      arr[j + 1] = currentValue
+function insertionSort(arr,n){
+  for(let i=1;i<n;i++){
+    var key=arr[i];
+    let j=i-1;
+    while(j>=0&&arr[j]>key){
+      arr[j+1]=arr[j]
+      j--
     }
-    return arr
+    arr[j+1]=key
   }
-  console.log(insertionSort([2, 1, 3, 7, 5])) // [1, 2, 3, 5, 7]
+  console.log(arr);
+}
+
+let arr=[6,3,4,2,5,7,3,2,4,6,4,3,7,89,90,6,5,34,6,67,53,43]
+let n=arr.length
+insertionSort(arr,n)
