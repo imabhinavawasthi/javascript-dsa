@@ -4,7 +4,7 @@ function fibonacci(num) {
     else if (num === 1) return 1
     // Recursive part
     return fibonacci(num - 1) + fibonacci(num - 2)
-  }
+}
   //O(2^N)
   fibonacci(1) // 1
   fibonacci(2) // 1

@@ -1,6 +1,7 @@
 function logTime(arr) {
     let numberOfLoops = 0
-    for (let i = 1; i < arr.length; i *= 2) {
+    let n=arr.length
+    for (let i = 1; i < n ; i *= 2) {
       numberOfLoops++
     }
     return numberOfLoops

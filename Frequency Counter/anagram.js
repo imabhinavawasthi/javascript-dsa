@@ -1,5 +1,5 @@
-var s1="functionup"
-var s2="functionon"
+var s1="asbcdfvsdvf"
+var s2="abcdfdvsfvs"
 
 var mp1=new Map()
 var mp2=new Map()

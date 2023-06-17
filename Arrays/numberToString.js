@@ -4,7 +4,7 @@ let s=""
 let alpha=[""]
 for(let i=97;i<=122;i++){
     // let chh=ch+'a';
-    s+=String.fromCharCode(i);
+    s+=String.fromCharCode(i);//abcd
     // console.log(s);
     alpha.push(s);
 }

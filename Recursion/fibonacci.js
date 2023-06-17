@@ -4,6 +4,6 @@ function fib(n){//nth fibonacci number
 
     //recursive
     return fib(n-1)+fib(n-2)
-}
+} 
 
 console.log(fib(20));

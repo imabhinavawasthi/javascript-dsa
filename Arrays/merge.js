@@ -1,10 +1,12 @@
 let array1 = [
     { name: "a", value: 123 },
     { name: "b", value: 666 },
+    { name: "a", value: 100 },
   ];
   let array2 = [
     { name: "c", value: 444 },
     { name: "d", value: 999 },
+    { name: "a", value: 2 },
     { name: "b", value: 111 },
   ];
 

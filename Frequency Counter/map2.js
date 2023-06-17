@@ -1,21 +1,17 @@
-let arr=[9,9,3,5,8,5,9,4]
+let arr=[3,2,3,1,4,2,3,1,4,5,2,7,2,3,3,7]
 
 var mp=new Map()
 
-for(let i=0;i<arr.length;i++){//O(N)
+for(let i=0;i<arr.length;i++){
     let x=arr[i]
-    if(mp.has(x)==true){
-        let v=mp.get(x)
-        v++
-        mp.set(x,v)
+    if(mp.has(x)==false){//not already present
+        mp.set(x,1);
     }
-    else{
-        mp.set(x,1)
+    else{//already present
+        mp.set(x,mp.get(x)+1)
     }
 }
 
 mp.forEach((value,key)=>{
-    console.log(key,"->",value);
+    console.log("key=",key," and value=",value);
 })
-
-

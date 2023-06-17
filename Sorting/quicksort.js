@@ -2,7 +2,7 @@ let arr=[8,1,6,2,4,3]
 
 function partition(arr,l,r){
     let pivot=arr[r]
-
+    let a=new Array(1000)
     let left=l
 
     for(let i=l;i<r;i++){
