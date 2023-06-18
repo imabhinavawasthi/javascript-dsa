@@ -1,10 +1,6 @@
-let str=""
-function ntob(n){
-    if(n==0||n==1)return n
-    
-    let rem=n%2
-    str=str+rem
-  
-    return (ntob(Math.floor(n/2))+str)
-}
-console.log(ntob(6))
+let s=["d","a","e","f"]
+
+let ss=s.sort((a,b) =>(a>b ? 1 : -1 ));
+
+console.log(s);
+console.log(ss);
